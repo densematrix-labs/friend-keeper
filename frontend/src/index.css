@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream: #FDF8E8;
+  --color-sage: #7BA67B;
+  --color-peach: #FF9F85;
+  --color-warm-gray: #6B6158;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background: linear-gradient(135deg, #FFFDF5 0%, #FDF8E8 50%, #FFF0EB 100%);
+  min-height: 100vh;
+  color: #2E2A26;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+/* Soft button styles */
+.btn-primary {
+  @apply bg-sage-500 text-white px-6 py-3 rounded-soft font-semibold transition-all duration-300;
+  @apply hover:bg-sage-600 hover:shadow-soft hover:-translate-y-0.5;
+  @apply active:translate-y-0;
+}
+
+.btn-secondary {
+  @apply bg-peach-100 text-warmGray-700 px-6 py-3 rounded-soft font-semibold transition-all duration-300;
+  @apply hover:bg-peach-200 hover:shadow-soft hover:-translate-y-0.5;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white/80 backdrop-blur-sm rounded-softer p-6 shadow-soft;
+  @apply transition-all duration-300 hover:shadow-softer;
+}
+
+/* Health status colors */
+.health-green {
+  @apply bg-sage-100 text-sage-600 border-sage-300;
+}
+
+.health-yellow {
+  @apply bg-yellow-50 text-yellow-700 border-yellow-300;
+}
+
+.health-red {
+  @apply bg-red-50 text-red-600 border-red-300;
+}
+
+/* Gentle animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Smooth page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}

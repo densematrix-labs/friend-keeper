@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "FriendKeeper",
+    "tagline": "Nurture Your Friendships"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "addFriend": "Add Friend",
+    "pricing": "Get More"
+  },
+  "dashboard": {
+    "title": "Your Friendships",
+    "subtitle": "Stay connected with the people who matter",
+    "needsAttention": "Needs Attention",
+    "comingUp": "Coming Up Soon",
+    "allGood": "All Good",
+    "noFriends": "No friends added yet",
+    "addFirst": "Add your first friend to start tracking",
+    "healthyCount": "{{count}} healthy friendships",
+    "atRiskCount": "{{count}} need attention"
+  },
+  "friend": {
+    "add": "Add Friend",
+    "name": "Name",
+    "nickname": "Nickname (optional)",
+    "relationType": "Relationship",
+    "contactFrequency": "How often to connect",
+    "notes": "Notes (optional)",
+    "save": "Save Friend",
+    "cancel": "Cancel",
+    "types": {
+      "friend": "Friend",
+      "family": "Family",
+      "colleague": "Colleague",
+      "acquaintance": "Acquaintance"
+    },
+    "frequency": {
+      "weekly": "Weekly",
+      "biweekly": "Every 2 weeks",
+      "monthly": "Monthly",
+      "quarterly": "Every 3 months"
+    }
+  },
+  "detail": {
+    "lastContact": "Last contact",
+    "daysAgo": "{{days}} days ago",
+    "neverContacted": "Never contacted",
+    "logContact": "I contacted them!",
+    "getTalkStarters": "Get conversation ideas",
+    "interactions": "Interaction History",
+    "noInteractions": "No interactions logged yet",
+    "summary": "What did you talk about?",
+    "nextTopics": "Topics for next time",
+    "talkStarters": "Conversation Starters"
+  },
+  "health": {
+    "green": "Doing great",
+    "yellow": "Reach out soon",
+    "red": "Needs attention"
+  },
+  "pricing": {
+    "title": "Get More Conversation Ideas",
+    "subtitle": "Unlock AI-powered talk starters to reconnect with friends",
+    "freeTrials": "{{count}} free tries remaining",
+    "noTrials": "Free trials used",
+    "popular": "Most Popular",
+    "features": {
+      "starters": "{{count}} conversation starters",
+      "languages": "All 7 languages supported",
+      "instant": "Instant generation"
+    },
+    "products": {
+      "starter": {
+        "name": "Starter Pack",
+        "description": "Perfect for trying it out"
+      },
+      "popular": {
+        "name": "Friend Pack",
+        "description": "Great for regular use"
+      },
+      "pro": {
+        "name": "Best Friend Pack",
+        "description": "For social butterflies"
+      }
+    }
+  },
+  "payment": {
+    "success": "Payment Successful!",
+    "tokensAdded": "{{count}} conversation starters added",
+    "backToDashboard": "Back to Dashboard"
+  },
+  "errors": {
+    "loadFailed": "Failed to load data",
+    "saveFailed": "Failed to save",
+    "paymentRequired": "Please purchase more conversation starters",
+    "generic": "Something went wrong"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back"
+  }
+}

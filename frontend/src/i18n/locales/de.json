@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "FreundeHüter",
+    "tagline": "Pflege deine Freundschaften"
+  },
+  "nav": {
+    "dashboard": "Übersicht",
+    "addFriend": "Freund hinzufügen",
+    "pricing": "Mehr erhalten"
+  },
+  "dashboard": {
+    "title": "Deine Freundschaften",
+    "subtitle": "Bleib mit wichtigen Menschen verbunden",
+    "needsAttention": "Braucht Aufmerksamkeit",
+    "comingUp": "Bald fällig",
+    "allGood": "Alles gut",
+    "noFriends": "Noch keine Freunde hinzugefügt",
+    "addFirst": "Füge deinen ersten Freund hinzu",
+    "healthyCount": "{{count}} gesunde Freundschaften",
+    "atRiskCount": "{{count}} brauchen Aufmerksamkeit"
+  },
+  "friend": {
+    "add": "Freund hinzufügen",
+    "name": "Name",
+    "nickname": "Spitzname (optional)",
+    "relationType": "Beziehung",
+    "contactFrequency": "Kontakthäufigkeit",
+    "notes": "Notizen (optional)",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "types": {
+      "friend": "Freund",
+      "family": "Familie",
+      "colleague": "Kollege",
+      "acquaintance": "Bekannter"
+    },
+    "frequency": {
+      "weekly": "Wöchentlich",
+      "biweekly": "Alle 2 Wochen",
+      "monthly": "Monatlich",
+      "quarterly": "Vierteljährlich"
+    }
+  },
+  "detail": {
+    "lastContact": "Letzter Kontakt",
+    "daysAgo": "vor {{days}} Tagen",
+    "neverContacted": "Noch nie kontaktiert",
+    "logContact": "Ich habe sie kontaktiert!",
+    "getTalkStarters": "Gesprächsideen erhalten",
+    "interactions": "Kontaktverlauf",
+    "noInteractions": "Noch keine Kontakte erfasst",
+    "summary": "Worüber habt ihr gesprochen?",
+    "nextTopics": "Themen fürs nächste Mal",
+    "talkStarters": "Gesprächsstarter"
+  },
+  "health": {
+    "green": "Läuft gut",
+    "yellow": "Bald melden",
+    "red": "Braucht Aufmerksamkeit"
+  },
+  "pricing": {
+    "title": "Mehr Gesprächsideen erhalten",
+    "subtitle": "Schalte KI-gestützte Gesprächsstarter frei",
+    "freeTrials": "{{count}} kostenlose Versuche übrig",
+    "noTrials": "Kostenlose Versuche aufgebraucht",
+    "popular": "Beliebteste",
+    "features": {
+      "starters": "{{count}} Gesprächsstarter",
+      "languages": "Alle 7 Sprachen unterstützt",
+      "instant": "Sofortige Generierung"
+    },
+    "products": {
+      "starter": {
+        "name": "Starter-Paket",
+        "description": "Perfekt zum Ausprobieren"
+      },
+      "popular": {
+        "name": "Freunde-Paket",
+        "description": "Ideal für regelmäßige Nutzung"
+      },
+      "pro": {
+        "name": "Beste-Freunde-Paket",
+        "description": "Für Social Butterflies"
+      }
+    }
+  },
+  "payment": {
+    "success": "Zahlung erfolgreich!",
+    "tokensAdded": "{{count}} Gesprächsstarter hinzugefügt",
+    "backToDashboard": "Zurück zur Übersicht"
+  },
+  "errors": {
+    "loadFailed": "Laden fehlgeschlagen",
+    "saveFailed": "Speichern fehlgeschlagen",
+    "paymentRequired": "Bitte kaufe mehr Gesprächsstarter",
+    "generic": "Etwas ist schiefgelaufen"
+  },
+  "common": {
+    "loading": "Laden...",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "back": "Zurück"
+  }
+}

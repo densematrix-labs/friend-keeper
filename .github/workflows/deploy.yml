@@ -1,0 +1,112 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  DEPLOY_PATH: /opt/demos/friend-keeper
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          
+      - name: Run backend tests
+        run: |
+          cd backend
+          pip install -r requirements.txt
+          pip install pytest pytest-cov pytest-asyncio httpx
+          pytest --cov=app --cov-fail-under=90
+          
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Run frontend tests
+        run: |
+          cd frontend
+          npm ci
+          npm run test -- --coverage
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Create .env file from secrets
+        run: |
+          cat > .env << EOF
+          LLM_PROXY_URL=https://llm-proxy.densematrix.ai
+          LLM_PROXY_KEY=${{ secrets.LLM_PROXY_KEY }}
+          DATABASE_URL=sqlite:///./app.db
+          CREEM_API_KEY=${{ secrets.CREEM_API_KEY }}
+          CREEM_WEBHOOK_SECRET=${{ secrets.CREEM_WEBHOOK_SECRET }}
+          CREEM_PRODUCT_IDS=${{ secrets.CREEM_PRODUCT_IDS }}
+          EOF
+      
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            cd ${{ env.DEPLOY_PATH }}
+            git pull origin main
+            
+      - name: Copy .env to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          source: ".env"
+          target: "${{ env.DEPLOY_PATH }}"
+          
+      - name: Rebuild and restart
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            cd ${{ env.DEPLOY_PATH }}
+            docker compose down
+            docker compose up -d --build
+            
+      - name: Health check
+        run: |
+          sleep 30
+          curl -sf https://friend-keeper.demo.densematrix.ai/health || exit 1
+
+      - name: Notify Slack on success
+        if: success()
+        uses: slackapi/slack-github-action@v1.26.0
+        with:
+          channel-id: 'C0AC1DWEBU3'
+          slack-message: "✅ *${{ github.repository }}* deployed successfully\n• Branch: `${{ github.ref_name }}`\n• Commit: `${{ github.sha }}`\n• <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+
+  notify-failure:
+    needs: [test, deploy]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Slack on failure
+        uses: slackapi/slack-github-action@v1.26.0
+        with:
+          channel-id: 'C0AC1DWEBU3'
+          slack-message: "❌ *${{ github.repository }}* deployment failed\n• Branch: `${{ github.ref_name }}`\n• <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}

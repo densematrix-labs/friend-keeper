@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "友谊守护者",
+    "tagline": "呵护你的友谊"
+  },
+  "nav": {
+    "dashboard": "仪表盘",
+    "addFriend": "添加朋友",
+    "pricing": "获取更多"
+  },
+  "dashboard": {
+    "title": "你的友谊",
+    "subtitle": "与重要的人保持联系",
+    "needsAttention": "需要关注",
+    "comingUp": "即将到期",
+    "allGood": "状态良好",
+    "noFriends": "还没有添加朋友",
+    "addFirst": "添加你的第一个朋友开始追踪",
+    "healthyCount": "{{count}} 段健康的友谊",
+    "atRiskCount": "{{count}} 段需要关注"
+  },
+  "friend": {
+    "add": "添加朋友",
+    "name": "姓名",
+    "nickname": "昵称（可选）",
+    "relationType": "关系类型",
+    "contactFrequency": "联系频率",
+    "notes": "备注（可选）",
+    "save": "保存",
+    "cancel": "取消",
+    "types": {
+      "friend": "朋友",
+      "family": "家人",
+      "colleague": "同事",
+      "acquaintance": "熟人"
+    },
+    "frequency": {
+      "weekly": "每周",
+      "biweekly": "每两周",
+      "monthly": "每月",
+      "quarterly": "每季度"
+    }
+  },
+  "detail": {
+    "lastContact": "上次联系",
+    "daysAgo": "{{days}} 天前",
+    "neverContacted": "从未联系",
+    "logContact": "我联系了他们！",
+    "getTalkStarters": "获取聊天话题",
+    "interactions": "互动历史",
+    "noInteractions": "还没有记录互动",
+    "summary": "你们聊了什么？",
+    "nextTopics": "下次要聊的话题",
+    "talkStarters": "聊天话题建议"
+  },
+  "health": {
+    "green": "状态良好",
+    "yellow": "记得联系",
+    "red": "需要关注"
+  },
+  "pricing": {
+    "title": "获取更多聊天话题",
+    "subtitle": "解锁 AI 驱动的聊天建议，重新联络朋友",
+    "freeTrials": "剩余 {{count}} 次免费试用",
+    "noTrials": "免费试用已用完",
+    "popular": "最受欢迎",
+    "features": {
+      "starters": "{{count}} 个聊天话题",
+      "languages": "支持全部 7 种语言",
+      "instant": "即时生成"
+    },
+    "products": {
+      "starter": {
+        "name": "入门包",
+        "description": "适合尝试"
+      },
+      "popular": {
+        "name": "朋友包",
+        "description": "适合日常使用"
+      },
+      "pro": {
+        "name": "挚友包",
+        "description": "适合社交达人"
+      }
+    }
+  },
+  "payment": {
+    "success": "支付成功！",
+    "tokensAdded": "已添加 {{count}} 个聊天话题",
+    "backToDashboard": "返回仪表盘"
+  },
+  "errors": {
+    "loadFailed": "加载失败",
+    "saveFailed": "保存失败",
+    "paymentRequired": "请购买更多聊天话题",
+    "generic": "出错了"
+  },
+  "common": {
+    "loading": "加载中...",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "back": "返回"
+  }
+}

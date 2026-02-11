@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "GardienAmi",
+    "tagline": "Cultivez vos amitiés"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "addFriend": "Ajouter un ami",
+    "pricing": "En savoir plus"
+  },
+  "dashboard": {
+    "title": "Vos amitiés",
+    "subtitle": "Restez connecté avec les personnes importantes",
+    "needsAttention": "Nécessite attention",
+    "comingUp": "À venir bientôt",
+    "allGood": "Tout va bien",
+    "noFriends": "Aucun ami ajouté",
+    "addFirst": "Ajoutez votre premier ami pour commencer",
+    "healthyCount": "{{count}} amitiés saines",
+    "atRiskCount": "{{count}} nécessitent attention"
+  },
+  "friend": {
+    "add": "Ajouter un ami",
+    "name": "Nom",
+    "nickname": "Surnom (optionnel)",
+    "relationType": "Relation",
+    "contactFrequency": "Fréquence de contact",
+    "notes": "Notes (optionnel)",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "types": {
+      "friend": "Ami",
+      "family": "Famille",
+      "colleague": "Collègue",
+      "acquaintance": "Connaissance"
+    },
+    "frequency": {
+      "weekly": "Hebdomadaire",
+      "biweekly": "Toutes les 2 semaines",
+      "monthly": "Mensuel",
+      "quarterly": "Trimestriel"
+    }
+  },
+  "detail": {
+    "lastContact": "Dernier contact",
+    "daysAgo": "il y a {{days}} jours",
+    "neverContacted": "Jamais contacté",
+    "logContact": "Je l'ai contacté !",
+    "getTalkStarters": "Obtenir des idées de conversation",
+    "interactions": "Historique des interactions",
+    "noInteractions": "Aucune interaction enregistrée",
+    "summary": "De quoi avez-vous parlé ?",
+    "nextTopics": "Sujets pour la prochaine fois",
+    "talkStarters": "Amorces de conversation"
+  },
+  "health": {
+    "green": "Tout va bien",
+    "yellow": "À contacter bientôt",
+    "red": "Nécessite attention"
+  },
+  "pricing": {
+    "title": "Plus d'idées de conversation",
+    "subtitle": "Débloquez des amorces de conversation par IA",
+    "freeTrials": "{{count}} essais gratuits restants",
+    "noTrials": "Essais gratuits épuisés",
+    "popular": "Plus populaire",
+    "features": {
+      "starters": "{{count}} amorces de conversation",
+      "languages": "7 langues supportées",
+      "instant": "Génération instantanée"
+    },
+    "products": {
+      "starter": {
+        "name": "Pack Découverte",
+        "description": "Parfait pour essayer"
+      },
+      "popular": {
+        "name": "Pack Ami",
+        "description": "Idéal pour un usage régulier"
+      },
+      "pro": {
+        "name": "Pack Meilleur Ami",
+        "description": "Pour les papillons sociaux"
+      }
+    }
+  },
+  "payment": {
+    "success": "Paiement réussi !",
+    "tokensAdded": "{{count}} amorces de conversation ajoutées",
+    "backToDashboard": "Retour au tableau de bord"
+  },
+  "errors": {
+    "loadFailed": "Échec du chargement",
+    "saveFailed": "Échec de l'enregistrement",
+    "paymentRequired": "Veuillez acheter plus d'amorces",
+    "generic": "Une erreur est survenue"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "back": "Retour"
+  }
+}

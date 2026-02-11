@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "GuardaAmigos",
+    "tagline": "Cultiva tus amistades"
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "addFriend": "Añadir amigo",
+    "pricing": "Obtener más"
+  },
+  "dashboard": {
+    "title": "Tus amistades",
+    "subtitle": "Mantente conectado con quienes importan",
+    "needsAttention": "Necesita atención",
+    "comingUp": "Próximamente",
+    "allGood": "Todo bien",
+    "noFriends": "Aún no hay amigos",
+    "addFirst": "Añade tu primer amigo para empezar",
+    "healthyCount": "{{count}} amistades saludables",
+    "atRiskCount": "{{count}} necesitan atención"
+  },
+  "friend": {
+    "add": "Añadir amigo",
+    "name": "Nombre",
+    "nickname": "Apodo (opcional)",
+    "relationType": "Relación",
+    "contactFrequency": "Frecuencia de contacto",
+    "notes": "Notas (opcional)",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "types": {
+      "friend": "Amigo",
+      "family": "Familia",
+      "colleague": "Colega",
+      "acquaintance": "Conocido"
+    },
+    "frequency": {
+      "weekly": "Semanal",
+      "biweekly": "Cada 2 semanas",
+      "monthly": "Mensual",
+      "quarterly": "Trimestral"
+    }
+  },
+  "detail": {
+    "lastContact": "Último contacto",
+    "daysAgo": "hace {{days}} días",
+    "neverContacted": "Nunca contactado",
+    "logContact": "¡Los contacté!",
+    "getTalkStarters": "Obtener ideas de conversación",
+    "interactions": "Historial de interacciones",
+    "noInteractions": "Aún no hay interacciones",
+    "summary": "¿De qué hablaron?",
+    "nextTopics": "Temas para la próxima vez",
+    "talkStarters": "Inicios de conversación"
+  },
+  "health": {
+    "green": "Todo bien",
+    "yellow": "Contactar pronto",
+    "red": "Necesita atención"
+  },
+  "pricing": {
+    "title": "Más ideas de conversación",
+    "subtitle": "Desbloquea inicios de conversación con IA",
+    "freeTrials": "{{count}} pruebas gratis restantes",
+    "noTrials": "Pruebas gratis agotadas",
+    "popular": "Más popular",
+    "features": {
+      "starters": "{{count}} inicios de conversación",
+      "languages": "7 idiomas soportados",
+      "instant": "Generación instantánea"
+    },
+    "products": {
+      "starter": {
+        "name": "Paquete Inicial",
+        "description": "Perfecto para probar"
+      },
+      "popular": {
+        "name": "Paquete Amigo",
+        "description": "Ideal para uso regular"
+      },
+      "pro": {
+        "name": "Paquete Mejor Amigo",
+        "description": "Para mariposas sociales"
+      }
+    }
+  },
+  "payment": {
+    "success": "¡Pago exitoso!",
+    "tokensAdded": "{{count}} inicios de conversación añadidos",
+    "backToDashboard": "Volver al panel"
+  },
+  "errors": {
+    "loadFailed": "Error al cargar",
+    "saveFailed": "Error al guardar",
+    "paymentRequired": "Por favor compra más inicios",
+    "generic": "Algo salió mal"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Volver"
+  }
+}

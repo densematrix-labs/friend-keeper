@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "프렌드키퍼",
+    "tagline": "우정을 가꾸세요"
+  },
+  "nav": {
+    "dashboard": "대시보드",
+    "addFriend": "친구 추가",
+    "pricing": "더 보기"
+  },
+  "dashboard": {
+    "title": "나의 우정",
+    "subtitle": "소중한 사람들과 연결되세요",
+    "needsAttention": "관심 필요",
+    "comingUp": "곧 연락할 때",
+    "allGood": "잘 지내는 중",
+    "noFriends": "아직 친구가 없습니다",
+    "addFirst": "첫 번째 친구를 추가하세요",
+    "healthyCount": "{{count}}개의 건강한 우정",
+    "atRiskCount": "{{count}}개가 관심 필요"
+  },
+  "friend": {
+    "add": "친구 추가",
+    "name": "이름",
+    "nickname": "별명 (선택사항)",
+    "relationType": "관계",
+    "contactFrequency": "연락 빈도",
+    "notes": "메모 (선택사항)",
+    "save": "저장",
+    "cancel": "취소",
+    "types": {
+      "friend": "친구",
+      "family": "가족",
+      "colleague": "동료",
+      "acquaintance": "지인"
+    },
+    "frequency": {
+      "weekly": "매주",
+      "biweekly": "2주마다",
+      "monthly": "매월",
+      "quarterly": "분기별"
+    }
+  },
+  "detail": {
+    "lastContact": "마지막 연락",
+    "daysAgo": "{{days}}일 전",
+    "neverContacted": "아직 연락한 적 없음",
+    "logContact": "연락했어요!",
+    "getTalkStarters": "대화 주제 받기",
+    "interactions": "소통 기록",
+    "noInteractions": "아직 기록된 소통이 없습니다",
+    "summary": "무슨 이야기를 했나요?",
+    "nextTopics": "다음에 할 이야기",
+    "talkStarters": "대화 시작하기"
+  },
+  "health": {
+    "green": "잘 지내는 중",
+    "yellow": "곧 연락하세요",
+    "red": "관심 필요"
+  },
+  "pricing": {
+    "title": "더 많은 대화 아이디어",
+    "subtitle": "AI 대화 주제로 친구와 다시 연결하세요",
+    "freeTrials": "무료 체험 {{count}}회 남음",
+    "noTrials": "무료 체험 종료",
+    "popular": "인기",
+    "features": {
+      "starters": "{{count}}개의 대화 주제",
+      "languages": "7개 언어 지원",
+      "instant": "즉시 생성"
+    },
+    "products": {
+      "starter": {
+        "name": "스타터 팩",
+        "description": "체험하기 좋아요"
+      },
+      "popular": {
+        "name": "친구 팩",
+        "description": "일상 사용에 적합"
+      },
+      "pro": {
+        "name": "베스트 프렌드 팩",
+        "description": "소셜 나비를 위해"
+      }
+    }
+  },
+  "payment": {
+    "success": "결제 완료!",
+    "tokensAdded": "{{count}}개의 대화 주제가 추가되었습니다",
+    "backToDashboard": "대시보드로 돌아가기"
+  },
+  "errors": {
+    "loadFailed": "불러오기 실패",
+    "saveFailed": "저장 실패",
+    "paymentRequired": "대화 주제를 구매하세요",
+    "generic": "오류가 발생했습니다"
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "편집",
+    "back": "뒤로"
+  }
+}

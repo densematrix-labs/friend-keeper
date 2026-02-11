@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "フレンドキーパー",
+    "tagline": "友情を大切に"
+  },
+  "nav": {
+    "dashboard": "ダッシュボード",
+    "addFriend": "友達を追加",
+    "pricing": "もっと見る"
+  },
+  "dashboard": {
+    "title": "あなたの友情",
+    "subtitle": "大切な人とつながり続けよう",
+    "needsAttention": "注意が必要",
+    "comingUp": "もうすぐ",
+    "allGood": "順調",
+    "noFriends": "まだ友達が追加されていません",
+    "addFirst": "最初の友達を追加して追跡を始めましょう",
+    "healthyCount": "{{count}} 件の健全な友情",
+    "atRiskCount": "{{count}} 件が注意が必要"
+  },
+  "friend": {
+    "add": "友達を追加",
+    "name": "名前",
+    "nickname": "ニックネーム（任意）",
+    "relationType": "関係",
+    "contactFrequency": "連絡頻度",
+    "notes": "メモ（任意）",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "types": {
+      "friend": "友達",
+      "family": "家族",
+      "colleague": "同僚",
+      "acquaintance": "知人"
+    },
+    "frequency": {
+      "weekly": "毎週",
+      "biweekly": "2週間ごと",
+      "monthly": "毎月",
+      "quarterly": "3ヶ月ごと"
+    }
+  },
+  "detail": {
+    "lastContact": "最後の連絡",
+    "daysAgo": "{{days}} 日前",
+    "neverContacted": "まだ連絡していません",
+    "logContact": "連絡しました！",
+    "getTalkStarters": "会話のアイデアを取得",
+    "interactions": "やり取り履歴",
+    "noInteractions": "まだやり取りが記録されていません",
+    "summary": "何を話しましたか？",
+    "nextTopics": "次回話すこと",
+    "talkStarters": "会話のきっかけ"
+  },
+  "health": {
+    "green": "順調です",
+    "yellow": "そろそろ連絡を",
+    "red": "注意が必要"
+  },
+  "pricing": {
+    "title": "もっと会話のアイデアを",
+    "subtitle": "AIによる会話のきっかけで友達と再接続",
+    "freeTrials": "無料お試し残り {{count}} 回",
+    "noTrials": "無料お試し終了",
+    "popular": "人気",
+    "features": {
+      "starters": "{{count}} 個の会話のきっかけ",
+      "languages": "7言語対応",
+      "instant": "即時生成"
+    },
+    "products": {
+      "starter": {
+        "name": "スターターパック",
+        "description": "お試しに最適"
+      },
+      "popular": {
+        "name": "フレンドパック",
+        "description": "日常使いに最適"
+      },
+      "pro": {
+        "name": "ベストフレンドパック",
+        "description": "ヘビーユーザー向け"
+      }
+    }
+  },
+  "payment": {
+    "success": "支払い完了！",
+    "tokensAdded": "{{count}} 個の会話のきっかけが追加されました",
+    "backToDashboard": "ダッシュボードに戻る"
+  },
+  "errors": {
+    "loadFailed": "読み込みに失敗しました",
+    "saveFailed": "保存に失敗しました",
+    "paymentRequired": "会話のきっかけを購入してください",
+    "generic": "エラーが発生しました"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "back": "戻る"
+  }
+}
