@@ -276,7 +276,7 @@ export default function FriendDetail() {
           {t('detail.interactions')}
         </h2>
 
-        {friend.interactions.length > 0 ? (
+        {friend.interactions && friend.interactions.length > 0 ? (
           <ul className="space-y-4">
             {friend.interactions.map((interaction) => (
               <li

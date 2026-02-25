@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://friend-keeper.demo.densematrix.ai/sitemap.xml
