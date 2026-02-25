@@ -6,7 +6,7 @@ services:
     container_name: friend-keeper-frontend
     restart: unless-stopped
     ports:
-      - "30065:80"
+      - "30072:80"
     depends_on:
       - backend
     networks:
@@ -23,7 +23,7 @@ services:
     container_name: friend-keeper-backend
     restart: unless-stopped
     ports:
-      - "30066:8000"
+      - "30073:8000"
     environment:
       - DATABASE_URL=sqlite:///./app.db
       - LLM_PROXY_URL=${LLM_PROXY_URL:-https://llm-proxy.densematrix.ai}
